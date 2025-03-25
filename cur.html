@@ -1,0 +1,108 @@
+<html>
+<head>
+    <title>Currency Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body background="C:\Users\pc\Downloads\cash.jpg">
+    <div class="container">
+        <h2>Welcome to Our Currency Converter</h2>
+        <form id="currencyForm" action="https://wise.com/in/currency-converter" method="get">
+            <label for="fromCurrency">From Currency:</label>
+            <select id="fromCurrency" name="fromCurrency" required>
+                <option value="USD">USD - US Dollar</option>
+                <option value="EUR">EUR - Euro</option>
+                <option value="GBP">GBP - British Pound</option>
+                <option value="JPY">JPY - Japanese Yen</option>
+                <option value="CNY">CNY - Chinese Yuan</option>
+                <option value="INR">INR - Indian Rupee</option>
+                <option value="BRL">BRL - Brazilian Real</option>
+                <option value="AUD">AUD - Australian Dollar</option>
+                <option value="RUB">RUB - Russian Ruble</option>
+                <option value="MXN">MXN - Mexican Peso</option>
+                <option value="KRW">KRW - South Korean Won</option>
+                <option value="ZAR">ZAR - South African Rand</option>
+                <option value="EGP">EGP - Egyptian Pound</option>
+                <option value="ARS">ARS - Argentine Peso</option>
+                <option value="SAR">SAR - Saudi Riyal</option>
+                <option value="NZD">NZD - New Zealand Dollar</option>
+                <option value="TRY">TRY - Turkish Lira</option>
+                <option value="THB">THB - Thai Baht</option>
+                <option value="IDR">IDR - Indonesian Rupiah</option>
+                <option value="PKR">PKR - Pakistani Rupee</option>
+            </select>
+
+            <label for="toCurrency">To Currency:</label>
+            <select id="toCurrency" name="toCurrency" required>
+                <option value="USD">USD - US Dollar</option>
+                <option value="EUR">EUR - Euro</option>
+                <option value="GBP">GBP - British Pound</option>
+                <option value="JPY">JPY - Japanese Yen</option>
+                <option value="CNY">CNY - Chinese Yuan</option>
+                <option value="INR">INR - Indian Rupee</option>
+                <option value="BRL">BRL - Brazilian Real</option>
+                <option value="AUD">AUD - Australian Dollar</option>
+                <option value="RUB">RUB - Russian Ruble</option>
+                <option value="MXN">MXN - Mexican Peso</option>
+                <option value="KRW">KRW - South Korean Won</option>
+                <option value="ZAR">ZAR - South African Rand</option>
+                <option value="EGP">EGP - Egyptian Pound</option>
+                <option value="ARS">ARS - Argentine Peso</option>
+                <option value="SAR">SAR - Saudi Riyal</option>
+                <option value="NZD">NZD - New Zealand Dollar</option>
+                <option value="TRY">TRY - Turkish Lira</option>
+                <option value="THB">THB - Thai Baht</option>
+                <option value="IDR">IDR - Indonesian Rupiah</option>
+                <option value="PKR">PKR - Pakistani Rupee</option>
+            </select>
+
+            <button type="submit">Convert</button>
+        </form>
+    </div>
+</body>
+</html>
